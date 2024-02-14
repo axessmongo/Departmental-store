@@ -10,6 +10,7 @@ import groundnut from "../assets/images/groundnut-oil.jpg"
 import olive from "../assets/images/olive-oil1.jpg"
 import Categories from './Categories';
 import FruitsVeg from "./FruitsVeg";
+import Footer from "./Footer";
 
 
 function Nav() {
@@ -48,7 +49,7 @@ function Nav() {
                 </li>
                 <li className="nav-item mx-2" >
                   <a className="nav-link active px-3" href="#tranding">
-                    Tranding Products
+                    Trending Products
                   </a>
                 </li>
                 <li className="nav-item mx-2">
@@ -1340,6 +1341,7 @@ function Nav() {
           </div>
         </div>
       </section>
+      <Footer/>
       
     </div>
   );

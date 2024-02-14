@@ -1,6 +1,7 @@
 
 import React from 'react';
 import sunflower from '../assets/images/goldwinner.webp';
+import cosmatics from '../assets/images/cosmatics.jpg'
 
 
 export default function Categories() {
@@ -21,8 +22,8 @@ export default function Categories() {
             <h4 className='text-center pt-2'>oil</h4>
           </div>
           <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
-            <h4 className='text-center pt-2'>oil</h4>
+            <img src={cosmatics} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
+            <h4 className='text-center pt-2'>Cosmatics</h4>
           </div>
           <div className='col-md-2'>
             <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />

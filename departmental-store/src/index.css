@@ -53,3 +53,11 @@ a{
     transform: scale(1.05);
   }
   
+.footerheight{
+    height: 50vh;
+}
+li{
+    list-style: none;
+    line-height: 30px;
+    
+}
