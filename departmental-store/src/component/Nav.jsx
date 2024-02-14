@@ -2,12 +2,14 @@ import React from "react";
 import ghee from "../assets/images/Ghee_1.webp";
 import product from "../assets/images/Product_Based.webp";
 import oil from "../assets/images/New_website_Banner.webp";
-import brakefast from "../assets/images/brakefast-combo2.jpg";
+import Breakfast from "../assets/images/breakfast-combo2.jpg";
 import healthy from "../assets/images/healthy-product.jpg";
 import badam from "../assets/images/badam-oil.jpg"
 import coconut from "../assets/images/coconut-oil.jpg"
 import groundnut from "../assets/images/groundnut-oil.jpg"
 import olive from "../assets/images/olive-oil1.jpg"
+import Categories from './Categories';
+import FruitsVeg from "./FruitsVeg";
 
 
 function Nav() {
@@ -16,7 +18,7 @@ function Nav() {
       {/* nav */}
       <section className="nav-banner">
         <nav
-          className="navbar navbar-expand-lg navbar-light bg-warning "
+          className="navbar navbar-expand-lg navbar-light bg-warning fixed-top "
           id="home"
         >
           <div className="container-fluid">
@@ -38,15 +40,15 @@ function Nav() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto mb-3 heading5 p-2 mb-lg-0 text-center">
+              <ul className="navbar-nav ms-auto mb-3 heading5 p-2 mb-lg-0 text-center ">
                 <li className="nav-item mx-2">
                   <a className="nav-link active px-3" href="#home">
                     Home
                   </a>
                 </li>
-                <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#online">
-                    New Products
+                <li className="nav-item mx-2" >
+                  <a className="nav-link active px-3" href="#tranding">
+                    Tranding Products
                   </a>
                 </li>
                 <li className="nav-item mx-2">
@@ -60,8 +62,8 @@ function Nav() {
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#occasion">
-                    Chocolate
+                  <a className="nav-link active px-3" href="#fruit&veg">
+                    Fruit&Veg
                   </a>
                 </li>
               </ul>
@@ -69,7 +71,7 @@ function Nav() {
           </div>
         </nav>
       </section>
-      <h1 className="text-center" data-aos="fade-up">
+      <h1 className="text-center mt-5 pt-4 fixed" data-aos="fade-up" >
         <span className="text-danger display-4 fw-bold">D</span>epartmental{" "}
         <span className="text-warning display-4  fw-bold">S</span>tore
       </h1>
@@ -93,233 +95,8 @@ function Nav() {
           </div>
         </div>
       </section>
-      {/* tranding */}
-      <section className="container">
-        <h1 className="text-center" data-aos="fade-down">
-          <span className="text-danger display-4 fw-bold">T</span>randing{" "}
-          <span className="text-warning display-4  fw-bold">P</span>roduct
-        </h1>
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                className="row justify-content-center mt-5"
-                data-aos="fade-left"
-              >
-                <div className="col-md-3">
-                  <div className="card d-flex">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                    
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="row justify-content-center mt-5">
-                <div className="col-md-3">
-                  <div className="card d-flex">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card d-flex">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Categories */}
+      <Categories/>
       {/* navpills */}
       <section className="container mt-5">
         <div className="">
@@ -500,13 +277,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -550,13 +327,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -605,13 +382,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -655,13 +432,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -718,13 +495,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -768,118 +545,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row justify-content-center mt-5"
-                data-aos="fade-left"
-              >
-                <div className="col-md-3 mt-3">
-                  <div className="card d-flex">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -928,13 +600,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -978,13 +650,118 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row justify-content-center mt-5"
+                data-aos="fade-left"
+              >
+                <div className="col-md-3 mt-3">
+                  <div className="card d-flex">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -1041,13 +818,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -1091,118 +868,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="row justify-content-center mt-5"
-                data-aos="fade-left"
-              >
-                <div className="col-md-3 mt-3">
-                  <div className="card d-flex">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:100.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      healthy Product
-                    </h3>
-
-                    <img
-                      src={healthy}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">healthy Product</a>
-                    </p>
-                    <p className="fw-bold mx-auto">RS:190.00</p>
-                  </div>
-                </div>
-                <div className="col-md-3 mt-3">
-                  <div className="card">
-                    <h3
-                      style={{
-                        border: "2px solid orange",
-                        width: "max-content",
-                        backgroundColor: "orange",
-                      }}
-                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
-                    >
-                      Breakfast
-                    </h3>
-
-                    <img
-                      src={brakefast}
-                      class="d-block  img-fluid"
-                      className="mt-2 p-4"
-                      alt="..."
-                    />
-                    <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -1251,13 +923,13 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -1301,13 +973,118 @@ function Nav() {
                     </h3>
 
                     <img
-                      src={brakefast}
+                      src={Breakfast}
                       class="d-block  img-fluid"
                       className="mt-2 p-4"
                       alt="..."
                     />
                     <p className="mx-auto">
-                      <a href="">Brakefast Combo</a>
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="row justify-content-center mt-5"
+                data-aos="fade-left"
+              >
+                <div className="col-md-3 mt-3">
+                  <div className="card d-flex">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3 mt-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 rounded-3 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      class="d-block  img-fluid"
+                      className="mt-2 p-4"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
                     </p>
                     <p className="fw-bold mx-auto">RS:100.00</p>
                   </div>
@@ -1341,6 +1118,229 @@ function Nav() {
           </div>
         </div>
       </section>
+    
+      {/* fruits&veg */}
+      <FruitsVeg/>
+        {/* tranding */}
+        <section className="container mt-4" id="tranding">
+        <h1 className="text-center" data-aos="fade-down">
+          <span className="text-danger display-4 fw-bold">T</span>randing{" "}
+          <span className="text-warning display-4  fw-bold">P</span>roduct
+        </h1>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                className="row justify-content-center mt-5"
+                data-aos="fade-left"
+              >
+                <div className="col-md-3">
+                  <div className="card d-flex ">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                    
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div className="row justify-content-center mt-5">
+                <div className="col-md-3">
+                  <div className="card d-flex">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card d-flex">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      Breakfast
+                    </h3>
+
+                    <img
+                      src={Breakfast}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">Breakfast Combo</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:100.00</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="card">
+                    <h3
+                      style={{
+                        border: "2px solid orange",
+                        width: "max-content",
+                        backgroundColor: "orange",
+                      }}
+                      className="px-3 py-1 mx-auto mt-3 text-light fw-bold"
+                    >
+                      healthy Product
+                    </h3>
+
+                    <img
+                      src={healthy}
+                      className="mt-2 zoom-card p-4 d-block  img-fluid"
+                      alt="..."
+                    />
+                    <p className="mx-auto">
+                      <a href="">healthy Product</a>
+                    </p>
+                    <p className="fw-bold mx-auto">RS:190.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 }

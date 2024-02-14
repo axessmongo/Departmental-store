@@ -45,3 +45,11 @@ a{
     justify-content: center !important;
     display: flex !important;
 }
+.zoom-card {
+    transition: transform 0.2s;
+  }
+  
+  .zoom-card:hover {
+    transform: scale(1.05);
+  }
+  

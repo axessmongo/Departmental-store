@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './component/Nav';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import FruitsVeg from './component/FruitsVeg';
 
 function App() {
   useEffect(() => {
@@ -11,7 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+    
+      <Nav/>
+     
+     
     </div>
   );
 }
