@@ -72,6 +72,13 @@ function Nav() {
           </div>
         </nav>
       </section>
+
+        
+ <div className='buy-now d-flex justify-content-center align-items-center rounded-2'>
+                <a href="https://axesstechnology.in/contact" target='_blank'>
+                <button className='buy-now-bt'>BuyNow</button></a>
+            </div>
+
       <h1 className="text-center mt-5 pt-4 fixed" data-aos="fade-up" >
         <span className="text-danger display-4 fw-bold">D</span>epartmental{" "}
         <span className="text-warning display-4  fw-bold">S</span>tore
