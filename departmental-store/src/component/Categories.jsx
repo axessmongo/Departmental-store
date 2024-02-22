@@ -2,6 +2,8 @@
 import React from 'react';
 import sunflower from '../assets/images/goldwinner.webp';
 import cosmatics from '../assets/images/cosmatics.jpg'
+import chocolate from '../assets/images/chocolate.jpg'
+
 
 
 export default function Categories() {
@@ -22,7 +24,7 @@ export default function Categories() {
             <h4 className='text-center pt-2'>oil</h4>
           </div>
           <div className='col-md-2'>
-            <img src={cosmatics} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
+            <img src={chocolate} className='img-fluid' alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
             <h4 className='text-center pt-2'>Cosmatics</h4>
           </div>
           <div className='col-md-2'>
@@ -52,31 +54,6 @@ export default function Categories() {
           </div>
           <div className='col-md-2'>
             <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
-            <h4 className='text-center pt-2'>oil</h4>
-          </div>
-          <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%' ,boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)'}} />
-            <h4 className='text-center pt-2'>oil</h4>
-          </div>
-          <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
-            <h4 className='text-center pt-2'>oil</h4>
-          </div>
-         
-        </div> 
-    </div>
-    <div class="carousel-item">
-    <div className='row mt-5 justify-content-around' data-aos="flip-up">
-          <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%' ,boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)'}} />
-            <h4 className='text-center pt-2'>oil</h4>
-          </div>
-          <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%',boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)' }} />
-            <h4 className='text-center pt-2'>oil</h4>
-          </div>
-          <div className='col-md-2'>
-            <img src={sunflower} alt="" style={{ width: '180px', borderRadius: '50%' ,boxShadow: '0 4px 2px rgba(0, 0, 0, 0.5)'}} />
             <h4 className='text-center pt-2'>oil</h4>
           </div>
           <div className='col-md-2'>

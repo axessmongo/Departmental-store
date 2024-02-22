@@ -13,22 +13,29 @@
     border-radius: 10px !important;
 }
 .nav-link{
-    font-size: 17px !important;
+    /* font-size: 17px !important;
     background: rgb(0, 140, 255) !important;
     color: white !important;
     font-weight: bold !important;
     letter-spacing: 1px !important;
-    border-radius: 10px !important;
+    border-radius: 10px !important; */
+    font-size: 15px !important;
+  letter-spacing: 1px !important;
+  border-left: 5px solid transparent !important;
+  transition: none !important;
 
 }
 .nav-link:hover{
-    font-size: 17px !important;
-    background: orange !important;
-    color: white !important;
+     /* background:#00379c!important; */
+    border-top: 3px solid navy !important; 
+  
+     /* border-left: 5px solid #00379c;
+     border-right: 5px solid #00379c;
+    color: white !important; */
     font-weight: bold !important;
     letter-spacing: 1px !important;
-    border-radius: 10px !important;
-
+    /* border-radius: 100px !important; */
+    
 }
 a{
     text-decoration: none !important;
@@ -54,7 +61,7 @@ a{
   }
   
 .footerheight{
-    height: 50vh;
+    height: 60vh;
 }
 li{
     list-style: none;

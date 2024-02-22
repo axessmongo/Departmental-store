@@ -19,7 +19,7 @@ function Nav() {
       {/* nav */}
       <section className="nav-banner">
         <nav
-          className="navbar navbar-expand-lg navbar-light bg-warning fixed-top "
+          className="navbar navbar-expand-lg navbar-light bg-info-subtle fixed-top "
           id="home"
         >
           <div className="container-fluid">
@@ -41,29 +41,29 @@ function Nav() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto mb-3 heading5 p-2 mb-lg-0 text-center ">
+              <ul className="navbar-nav ms-auto mb-3 heading5  mb-lg-0 text-center ">
                 <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#home">
+                  <a className="nav-link active " href="#home">
                     Home
                   </a>
                 </li>
                 <li className="nav-item mx-2" >
-                  <a className="nav-link active px-3" href="#tranding">
+                  <a className="nav-link active " href="#trending">
                     Trending Products
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#celebrate">
+                  <a className="nav-link active " href="#celebrate">
                    Offers
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#categories">
+                  <a className="nav-link active " href="#categories">
                     Categories
                   </a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link active px-3" href="#fruit&veg">
+                  <a className="nav-link active " href="#fruit&veg">
                     Fruit&Veg
                   </a>
                 </li>
@@ -1123,9 +1123,9 @@ function Nav() {
       {/* fruits&veg */}
       <FruitsVeg/>
         {/* tranding */}
-        <section className="container mt-4" id="tranding">
+        <section className="container mt-4" id="trending">
         <h1 className="text-center" data-aos="fade-down">
-          <span className="text-danger display-4 fw-bold">T</span>randing{" "}
+          <span className="text-danger display-4 fw-bold">T</span>rending{" "}
           <span className="text-warning display-4  fw-bold">P</span>roduct
         </h1>
         <div
